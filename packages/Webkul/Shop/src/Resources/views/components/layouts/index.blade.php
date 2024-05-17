@@ -24,7 +24,7 @@
             href="{{ core()->getCurrentChannel()->favicon_url ?? bagisto_asset('images/favicon.ico') }}"
         />
 
-        @bagistoVite(['src/Resources/assets/css/app.css', 'src/Resources/assets/js/app.js'])
+        @bagistoVite(['src/Resources/assets/css/app.css', 'src/Resources/assets/js/app.js','src/Resources/assets/images/logo.jpg'])
 
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" as="style">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">

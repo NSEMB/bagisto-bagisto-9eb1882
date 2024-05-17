@@ -11,7 +11,7 @@
         >
         </i>
 
-        <!-- Logo 
+        <!-- Logo -->
         <a href="{{ route('admin.dashboard.index') }}">
             @if ($logo = core()->getConfigData('general.design.admin_logo.logo_image'))
                 <img
@@ -21,12 +21,12 @@
                 />
             @else
                 <img
-                    src="{{ request()->cookie('dark_mode') ? bagisto_asset('images/dark-logo.svg') : bagisto_asset('images/logo.svg') }}"
+                    src="{{ request()->cookie('dark_mode') ? bagisto_asset('images/logo.jpg') : bagisto_asset('images/logo.jpg') }}"
                     id="logo-image"
                     alt="{{ config('app.name') }}"
                 />
             @endif
-        </a> -->
+        </a> 
 
         <!-- Mega Search Bar Vue Component -->
         <v-mega-search>
@@ -153,7 +153,7 @@
                 />
             @else
                 <img
-                    src="{{ request()->cookie('dark_mode') ? bagisto_asset('images/dark-logo.svg') : bagisto_asset('images/logo.svg') }}"
+                    src="{{ request()->cookie('dark_mode') ? bagisto_asset('images/dark-logo.svg') : bagisto_asset('images/logo.jpg') }}"
                     id="logo-image"
                     alt="{{ config('app.name') }}"
                 />
@@ -732,7 +732,7 @@
                 return {
                     isDarkMode: {{ request()->cookie('dark_mode') ?? 0 }},
 
-                    logo: "{{ bagisto_asset('images/logo.svg') }}",
+                    logo: "{{ bagisto_asset('images/logo.jpg') }}",
 
                     dark_logo: "{{ bagisto_asset('images/dark-logo.svg') }}",
                 };
