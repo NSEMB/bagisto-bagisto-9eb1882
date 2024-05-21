@@ -93,10 +93,11 @@
                 <!-- Proceed Button -->
                 <div class="flex justify-end mt-4">
                     <x-shop::button
-                        class="primary-button py-3 px-11 rounded-2xl"
+                        class=" py-3 px-11 rounded-2xl"
                         :title="trans('shop::app.checkout.onepage.address.proceed')"
                         ::loading="isStoring"
                         ::disabled="isStoring"
+                        style="background-color:#eb1070;color:white"
                     />
                 </div>
             </form>

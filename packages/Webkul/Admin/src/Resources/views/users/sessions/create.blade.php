@@ -7,14 +7,14 @@
      
     <div class="flex justify-center items-center h-[100vh]" >
         <div class="  items-center" style="width:30%">
-            <!-- Logo             
+            <!-- Logo   -->          
          
                 <img
                     class="w-max" 
-                    src="{{ bagisto_asset('images/logo.svg') }}"
+                    src="{{ bagisto_asset('images/logo.jpg') }}"
                     alt="{{ config('app.name') }}"
                 />
-             -->
+             
              <p class="text-2xl font-bold mb-5">MalingeriedAmour Admin</p>
             <div class="flex flex-col min-w-[300px] bg-white dark:bg-gray-900 rounded-md box-shadow">
                 <!-- Login Form -->
