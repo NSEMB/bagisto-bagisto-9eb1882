@@ -35,6 +35,8 @@
     </IfModule>
 </FilesMatch>
 
+
+
 # Text Compression
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE application/json
